@@ -8,6 +8,9 @@ from tensorflow.keras.layers import GRU, Dense
 import tensorflow as tf
 from datetime import datetime, timedelta 
 from flask import Flask, jsonify 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 
 app = Flask(__name__)
 
