@@ -158,7 +158,7 @@ def train_and_evaluate_model(api_key):
 
 @app.route('/predict', methods=['GET'])
 def predict_price():
-    api_key = ""  # Reemplaza esto con tu clave API
+    api_key = "9Zi4RTzZSeVjsm9zlTg378rbezjR6yOkN4tdyWq7OUCF4L27ziZS114mRTIXk1Nh"  # Reemplaza esto con tu clave API
     last_timestamp, last_hour_price, predicted_next_hour_price = train_and_evaluate_model(api_key)
     
     return jsonify({
